@@ -40,8 +40,7 @@ def main():
   time.sleep(1)
   
   print "\n[+] Please wait, while updating Jaidam (via Gihub)..\n"
-  print "[+] Updating : ",
-  
+
   try:
     update = subprocess.Popen("cd ../ >/dev/null 2>&1"+
       "&& rm -rf Jaidam >/dev/null   2>&1"+
