@@ -39,15 +39,23 @@ def main():
   definepath = os.getcwd()
   time.sleep(1)
   
-  print "\n[+] Please wait, while updating Jaidam (via Gihub)..\n"
+  sys.stdout.write("\n[+] Please wait, while checking for updates (via Gihub) ... ")
+  sys.stdout.flush()
+  
+  try:
+    null = open("/dev/null", "w")
+    subprocess.Popen("git", stdout=null, stderr=null)
+    null.close()
+
+  except OSError:
+    print "["+colors.color.RED+"FAILED"+colors.color.RESET+"]"
+    print "[-] Exiting Jaidam..\n"
+    exit()
 
   try:
-    update = subprocess.Popen("cd ../ >/dev/null 2>&1"+
-      "&& rm -rf Jaidam >/dev/null   2>&1"+
-      "&& git clone git://github.com/stasinopoulos/Jaidam.git Jaidam", shell=True).wait()
-    print"\n[+] Jaidam updated successfully..." 
-    print"[+] Updates not take effect immediately.. May need to restart Jaidam.."
-      
+    print "\n"
+    update = subprocess.Popen("git pull", shell=True).wait()
+    
   except:
     print"["+colors.color.RED+"FAILED"+colors.color.RESET+"]"
     print "[-] Exiting Jaidam..\n"
