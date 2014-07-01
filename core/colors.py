@@ -36,6 +36,6 @@ class color:
   RED = '\033[91m'
   BOLD = '\033[1m'
   UNDERL = '\033[4m'
-  RESET 	= '\033[0;0m'
+  RESET = '\033[0;0m'
 
 #eof
