@@ -16,7 +16,7 @@
            . ,,,      .,,  ,;. E#t        ,,,      .,,           j          
                                L:                          
 
-#### GENERAL INFORMATION
+##### GENERAL INFORMATION
 
 Jaidam is an open source penetration testing tool that a security tools that would take as input a list of domain names, scan them, determine if wordpress or joomla platform was used and finally check them automatically, for web vulnerabilities using two well‐known open source tools : 
 
@@ -29,7 +29,7 @@ When the scanning of domain names is completed the user is asked whether he like
 
 After completing the scan procedure, jaidam stores the results in the `wp_vulne_table`  for wordpress results or  in  the  `jm_vulne_table`  for  joomla  results  in a sqlite3 database within the file `jaidamSQLite.db`.
 
-The  categories  of  the  vulnerabilities  the  tool  will  scan  for  have  been  chosen  based  on  the owasp’s top10 vulnerability list and are the following: 
+The  categories  of  the  vulnerabilities  the  tool  will  scan  for  have  been  chosen  based  on  the [Owasp’s top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) vulnerability list and are the following: 
 
 For wordpress sites: 
     
@@ -54,7 +54,7 @@ For Joomla sites:
      [*] Htaccess
 
 
-#### INSTALL
+##### INSTALL
 Jaidam has been written and tested in debian-like distros. The main distro that it was tested on is the new generation of the industry-leading BackTrack Linux penetration testing and security auditing distribution, Kali Linux. 
 In order for the program to run in a kali linux distro it is necessary for the distro to be fully updated, upgraded :
     
@@ -72,7 +72,8 @@ In case of other debian-like distros the prerequisites are:
      [*] WPScan        - http://wpscan.org
      [*] JoomScan      - http://sourceforge.net/projects/joomscan/
 
-#### STRACTURE
+
+##### STRACTURE
 Jaidam is written in Python programming language and its structure is shown below :
 
     .
@@ -99,7 +100,7 @@ Jaidam is written in Python programming language and its structure is shown belo
     
     4 directories, 16 files
     
-#### OPTIONS
+##### OPTIONS
       L / l: Create List
       C / c: Create list of custom TXT file
       S / s: Scan a single site
@@ -113,29 +114,33 @@ Jaidam is written in Python programming language and its structure is shown belo
       U / u: Update Jaidam to the latest version
       Q / q: Quit
 
-#ADDING EXTRA MODULES
+##### ADDING EXTRA MODULES
 In this section anyone can write his own python modules for this tool . Example can be another scanner or another list generator script. 
 
 The only thing that you must have in mind is that : 
 You must include your script in the `/modules` folder and add your script to the menu in `/modules/modmenu.py`
 
-#### WHO CAN USE IT?
+##### WHO CAN USE IT?
 Everyone can use this tool. Jaidam Tolkit has a simple environment and can be used, from web developers that want to test their sites, from pentesters that have multiple/single site to check , either from a researcher that want to have statistics for the situation of specific websites. 
 
-#### WHAT JAIDAM CAN NOT DO?
+
+##### WHAT JAIDAM CAN NOT DO?
 Jaidam Toolking will not attempt to penetrate any of this site or to find any 0day. This tool will only warn you if there is a possible vulnerability in the site. More information about the vulnerability are presented but in no way this tool will exploit that vulnerability.
 
-#### KNOWN ISSUES
+
+##### KNOWN ISSUES
 The tool is not compatible (yet) with any other linux distribution except from debian based distros.
 
-#### FUTURE WORK
+
+##### FUTURE WORK
 Jaidam is a security tool that has shown to have much potential as fas as development concerns. There are a lot of aspects that could be improved like:
 
      [*] Graphical User Interface
      [*] Support for redhat and fedora distros.
      [*] Features like importing address spaces to be scanned.
 
-#### LICENSE
+
+##### LICENSE
     Jaidam Toolkit
     Copyright (C) 2013 Jaidam Development Team.
     
@@ -156,6 +161,7 @@ Jaidam is a security tool that has shown to have much potential as fas as develo
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#### ACKNOWLEDGMENTS
+
+##### ACKNOWLEDGMENTS
 Jaidam was developed as a project for the Postgraduate course [Digital Forensics and Web Security](http://temsec.ds.unipi.gr/en/digital-forensics-and-web-security/)
 in the [Department of Digital System](http://www.ds.unipi.gr/), [University of Piraeus](http://www.unipi.gr/unipi/en/).
