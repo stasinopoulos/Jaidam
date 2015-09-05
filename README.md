@@ -20,8 +20,8 @@
 
 Jaidam is an open source penetration testing tool that a security tools that would take as input a list of domain names, scan them, determine if wordpress or joomla platform was used and finally check them automatically, for web vulnerabilities using two well‐known open source tools : 
 
-     [*] WPScan (in case of wordpress) 
-     [*] Joomscan (in case of  joomla). 
+- [WPScan](http://wpscan.org) (in case of wordpress) 
+- [JoomScan](http://sourceforge.net/projects/joomscan/) (in case of  joomla). 
 
 The innovative part of Jaidam security tool is that it combines the modules of Joomscan and WPScan in one package providing more functionality to the user saving up much time. Moreover it can handle a list of sites taken as an input so as the user has the ability to run a distributed web vulnerability scan. There  is  a  builtin multithreaded function  for faster results in determining the kind of  CMS  a site  uses. 
 
@@ -32,45 +32,43 @@ After completing the scan procedure, jaidam stores the results in the `wp_vulne_
 The  categories  of  the  vulnerabilities  the  tool  will  scan  for  have  been  chosen  based  on  the [Owasp’s top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) vulnerability list and are the following: 
 
 For wordpress sites: 
-    
-     [*] SQL Injection 
-     [*] XSS 
-     [*] CSRF  
-     [*] File Upload 
-     [*] Denial of Service 
-     [*] Local / Remote file inclusion 
-     [*] Information disclosure
-     [*] robots.txt 
+- [SQL Injection](https://www.owasp.org/index.php/SQL_Injection)
+- [Cross-site Scripting (XSS)](https://www.owasp.org/index.php/Cross-site_scripting)
+- [Site Request Forgery (CSRF)](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
+- [Unrestricted File Upload](https://www.owasp.org/index.php/Unrestricted_File_Upload)
+- [Denial of Service](https://www.owasp.org/index.php/Denial_of_Service)
+- [Local / Remote file inclusion](https://en.wikipedia.org/wiki/File_inclusion_vulnerability)
+- [Information Leakage / Disclosure](https://www.owasp.org/index.php/Information_Leakage)
+- robots.txt 
 
 For Joomla sites:
-    
-     [*] SQL Injection 
-     [*] XSS 
-     [*] CSRF  
-     [*] File Upload 
-     [*] Denial of Service 
-     [*] Local / Remote file inclusion 
-     [*] Information disclosure
-     [*] Htaccess
+- [SQL Injection](https://www.owasp.org/index.php/SQL_Injection)
+- [Cross-site Scripting (XSS)](https://www.owasp.org/index.php/Cross-site_scripting)
+- [Site Request Forgery (CSRF)](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
+- [Unrestricted File Upload](https://www.owasp.org/index.php/Unrestricted_File_Upload)
+- [Denial of Service](https://www.owasp.org/index.php/Denial_of_Service)
+- [Local / Remote file inclusion](https://en.wikipedia.org/wiki/File_inclusion_vulnerability)
+- [Information Leakage / Disclosure](https://www.owasp.org/index.php/Information_Leakage)
+- Htaccess
 
 
 ##### INSTALL
 Jaidam has been written and tested in debian-like distros. The main distro that it was tested on is the new generation of the industry-leading BackTrack Linux penetration testing and security auditing distribution, Kali Linux. 
 In order for the program to run in a kali linux distro it is necessary for the distro to be fully updated, upgraded :
     
-     [*] apt-get update && apt-get upgrade
-     [*] apt-get dist-upgrade
+- apt-get update && apt-get upgrade
+- apt-get dist-upgrade
  
 After being download and extracted, the program runs in standalone mode.
 In case of other debian-like distros the prerequisites are:
 
-     [*] Ruby >= 1.9.2 - Recommended: 1.9.3
-     [*] Curl >= 7.21  - Recommended: latest - FYI the 7.29 has a segfault
-     [*] RubyGems      - Recommended: latest
-     [*] Pyhon = 2.7
-     [*] Git
-     [*] WPScan        - http://wpscan.org
-     [*] JoomScan      - http://sourceforge.net/projects/joomscan/
+- Ruby >= 1.9.2 - Recommended: 1.9.3
+- Curl >= 7.21  - Recommended: latest - FYI the 7.29 has a segfault
+- RubyGems - Recommended: latest
+- Pyhon = 2.7
+- Git
+- [WPScan](http://wpscan.org)
+- [JoomScan](http://sourceforge.net/projects/joomscan/)
 
 
 ##### STRACTURE
@@ -135,9 +133,10 @@ The tool is not compatible (yet) with any other linux distribution except from d
 ##### FUTURE WORK
 Jaidam is a security tool that has shown to have much potential as fas as development concerns. There are a lot of aspects that could be improved like:
 
-     [*] Graphical User Interface
-     [*] Support for redhat and fedora distros.
-     [*] Features like importing address spaces to be scanned.
+- Graphical User Interface
+- Support for redhat and fedora distros.
+- Features like importing address spaces to be scanned.
+- ...
 
 
 ##### LICENSE
