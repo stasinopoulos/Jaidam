@@ -121,24 +121,23 @@ while True:
   [+] Enter "Q" for quit.
   """
  
-  option = raw_input("Enter Option: > ")
-   
-  if option =='L' or option =='l':
+  option = raw_input("Enter Option: > ").upper()
+  if option =='L':
     lst.main()
    
-  if option =='W'or option =='w':
+  if option =='W':
     wps.main()
  
-  if option =='J'or option =='j':
+  if option =='J':
     jms.main()
 
-  if option =='M'or option =='m':
+  if option =='M':
     modmenu.main()
 
-  if option =='U'or option =='u':
+  if option =='U':
     update.main() 
     
-  if option =='Q' or option =='q':
+  if option =='Q':
     print "[-] Exiting Jaidam..\n"
     exit()
     
