@@ -133,7 +133,7 @@ The tool is not compatible (yet) with any other linux distribution except from d
 ##### FUTURE WORK
 Jaidam is a security tool that has shown to have much potential as fas as development concerns. There are a lot of aspects that could be improved like:
 
-- Graphical User Interface
+- Graphical User Interface.
 - Support for redhat and fedora distros.
 - Features like importing address spaces to be scanned.
 - ...
