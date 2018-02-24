@@ -113,13 +113,13 @@ Jaidam is written in Python programming language and its structure is shown belo
       Q / q: Quit
 
 ##### ADDING EXTRA MODULES
-In this section anyone can write his own python modules for this tool . Example can be another scanner or another list generator script. 
+In this section anyone can write his own python modules for this tool. Example can be another scanner or another list generator script. 
 
 The only thing that you must have in mind is that : 
 You must include your script in the `/modules` folder and add your script to the menu in `/modules/modmenu.py`
 
 ##### WHO CAN USE IT?
-Everyone can use this tool. Jaidam Tolkit has a simple environment and can be used, from web developers that want to test their sites, from pentesters that have multiple/single site to check , either from a researcher that want to have statistics for the situation of specific websites. 
+Everyone can use this tool. Jaidam Tolkit has a simple environment and can be used, from web developers that want to test their sites, from pentesters that have multiple/single site to check, either from a researcher that want to have statistics for the situation of specific websites. 
 
 
 ##### WHAT JAIDAM CAN NOT DO?
