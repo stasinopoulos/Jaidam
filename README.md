@@ -18,7 +18,7 @@
 
 ##### GENERAL INFORMATION
 
-Jaidam is an open source penetration testing tool that a security tools that would take as input a list of domain names, scan them, determine if wordpress or joomla platform was used and finally check them automatically, for web vulnerabilities using two well‐known open source tools : 
+Jaidam is an open source penetration testing tool that would take as input a list of domain names, scan them, determine if wordpress or joomla platform was used and finally check them automatically, for web vulnerabilities using two well‐known open source tools : 
 
 - [WPScan](http://wpscan.org) (in case of wordpress) 
 - [JoomScan](http://sourceforge.net/projects/joomscan/) (in case of  joomla). 
