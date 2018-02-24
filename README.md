@@ -25,7 +25,7 @@ Jaidam is an open source penetration testing tool that would take as input a lis
 
 The innovative part of Jaidam security tool is that it combines the modules of Joomscan and WPScan in one package providing more functionality to the user saving up much time. Moreover it can handle a list of sites taken as an input so as the user has the ability to run a distributed web vulnerability scan. There  is  a  builtin multithreaded function  for faster results in determining the kind of  CMS  a site  uses. 
 
-When the scanning of domain names is completed the user is asked whether he likes to perform a WPScan or a Joomscan. By choosing for example a WPScan then it starts to scan  for  vulnerabilities  all  the  sites  that  have  recognized  as  Wordpress  sites
+When the scanning of domain names is completed the user is asked whether he likes to perform a WPScan or a Joomscan. By choosing for example a WPScan then it starts to scan  for  vulnerabilities  all  the  sites  that  have  recognized  as  Wordpress  sites.
 
 After completing the scan procedure, jaidam stores the results in the `wp_vulne_table`  for wordpress results or  in  the  `jm_vulne_table`  for  joomla  results  in a sqlite3 database within the file `jaidamSQLite.db`.
 
