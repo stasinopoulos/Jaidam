@@ -23,13 +23,13 @@ Jaidam is an open source penetration testing tool that would take as input a lis
 - [WPScan](http://wpscan.org) (in case of wordpress) 
 - [JoomScan](http://sourceforge.net/projects/joomscan/) (in case of  joomla). 
 
-The innovative part of Jaidam security tool is that it combines the modules of Joomscan and WPScan in one package providing more functionality to the user saving up much time. Moreover it can handle a list of sites taken as an input so as the user has the ability to run a distributed web vulnerability scan. There  is  a  builtin multithreaded function  for faster results in determining the kind of  CMS  a site  uses. 
+The innovative part of Jaidam security tool is that it combines the modules of Joomscan and WPScan in one package providing more functionality to the user saving up much time. Moreover it can handle a list of sites taken as an input so as the user has the ability to run a distributed web vulnerability scan. There is a builtin multithreaded function for faster results in determining the kind of CMS a site uses. 
 
-When the scanning of domain names is completed the user is asked whether he likes to perform a WPScan or a Joomscan. By choosing for example a WPScan then it starts to scan  for  vulnerabilities  all  the  sites  that  have  recognized  as  Wordpress  sites.
+When the scanning of domain names is completed the user is asked whether he likes to perform a WPScan or a Joomscan. By choosing for example a WPScan then it starts to scan for vulnerabilities all the sites that have recognized as Wordpress sites.
 
-After completing the scan procedure, jaidam stores the results in the `wp_vulne_table`  for wordpress results or  in  the  `jm_vulne_table`  for  joomla  results  in a sqlite3 database within the file `jaidamSQLite.db`.
+After completing the scan procedure, jaidam stores the results in the `wp_vulne_table` for wordpress results or in the `jm_vulne_table` for joomla results in a sqlite3 database within the file `jaidamSQLite.db`.
 
-The  categories  of  the  vulnerabilities  the  tool  will  scan  for  have  been  chosen  based  on  the [Owasp’s top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) vulnerability list and are the following: 
+The categories of the vulnerabilities the tool will scan for have been chosen based on the [Owasp’s top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) vulnerability list and are the following: 
 
 For wordpress sites: 
 - [SQL Injection](https://www.owasp.org/index.php/SQL_Injection)
@@ -55,7 +55,7 @@ For Joomla sites:
 ##### INSTALL
 Jaidam has been written and tested in debian-like distros. The main distro that it was tested on is the new generation of the industry-leading BackTrack Linux penetration testing and security auditing distribution, Kali Linux. 
 In order for the program to run in a kali linux distro it is necessary for the distro to be fully updated, upgraded :
-    
+
 - apt-get update && apt-get upgrade
 - apt-get dist-upgrade
  
@@ -63,7 +63,7 @@ After being download and extracted, the program runs in standalone mode.
 In case of other debian-like distros the prerequisites are:
 
 - Ruby >= 1.9.2 - Recommended: 1.9.3
-- Curl >= 7.21  - Recommended: latest - FYI the 7.29 has a segfault
+- Curl >= 7.21 - Recommended: latest - FYI the 7.29 has a segfault
 - RubyGems - Recommended: latest
 - Pyhon = 2.7
 - Git
